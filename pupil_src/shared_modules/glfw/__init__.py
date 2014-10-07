@@ -59,7 +59,7 @@ else:
     elif os_name == "Darwin":
         dll_path = find_library('glfw3')
     else:
-        dll_path = find_library('glfw')
+        dll_path = find_library('glfw3')
     if not dll_path:
         raise RuntimeError, 'GLFW library not found'
 
