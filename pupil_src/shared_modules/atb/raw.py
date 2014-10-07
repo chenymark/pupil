@@ -32,7 +32,7 @@ if getattr(sys, 'frozen', False):
 
 else:
     # we are running in a normal Python environment
-    dll_path = ctypes.util.find_library('AntTweakBar')
+    dll_path = ctypes.util.find_library('AntTweakBar64')
 
 if not dll_path:
     raise RuntimeError, 'AntTweakBar library not found'
