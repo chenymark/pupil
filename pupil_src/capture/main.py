@@ -93,11 +93,11 @@ else:
 
 def main():
     # To assign camera by name: put string(s) in list
-    eye_src = ["Microsoft", "6000","Integrated Camera"]
-    world_src = ["Logitech Camera","(046d:081d)","C510","B525", "C525","C615","C920","C930e"]
+    #eye_src = ["Microsoft", "6000","Integrated Camera"]
+    #world_src = ["Logitech Camera","(046d:081d)","C510","B525", "C525","C615","C920","C930e"]
 
     # to assign cameras directly, using integers as demonstrated below
-    # eye_src = 1
+    eye_src = 1
     # world_src = 0
 
     # to use a pre-recorded video.
@@ -107,7 +107,7 @@ def main():
 
     # Camera video size in pixels (width,height)
     eye_size = (640,360)
-    world_size = (1280,720)
+    #world_size = (1280,720)
 
 
     # on MacOS we will not use os.fork, elsewhere this does nothing.
@@ -134,7 +134,7 @@ def main():
         # We need to give the camera driver some time before requesting another camera.
         sleep(0.5)
 
-    world(g_pool,world_src,world_size)
+    #world(g_pool,world_src,world_size)
 
     # Exit / clean-up
     p_eye.join()
