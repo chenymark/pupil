@@ -97,12 +97,12 @@ def main():
     #world_src = ["Logitech Camera","(046d:081d)","C510","B525", "C525","C615","C920","C930e"]
 
     # to assign cameras directly, using integers as demonstrated below
-    eye_src = 1
+    #eye_src = 1
     # world_src = 0
 
     # to use a pre-recorded video.
     # Use a string to specify the path to your video file as demonstrated below
-    # eye_src = '/Users/mkassner/Pupil/datasets/p1-left/frames/test.avi'
+    eye_src = 'c:\pupil\test.avi'
     # world_src = "/Users/mkassner/Desktop/2014_01_21/000/world.avi"
 
     # Camera video size in pixels (width,height)
